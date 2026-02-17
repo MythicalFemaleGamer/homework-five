@@ -1,0 +1,170 @@
+//trying media query on promo images - works
+
+@media screen and (max-width: 900px) {
+  .home-content {
+    .promos {
+      flex-direction: column;
+      align-items: center;
+
+      .promo-image-box {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+//trying nav again - works
+
+@media screen and (max-width: 900px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footer-contents {
+      // display: flex;
+
+      // margin-left: 100%;
+      .logo {
+        display: none;
+      }
+      .copywrite {
+        display: none;
+      }
+    }
+  }
+
+  nav {
+    // position: sticky;
+    align-items: center;
+    // display: flex;
+    justify-content: space-evenly;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    background-color: $footer-bg-color;
+  }
+}
+
+//trying booking form again because I hate myself
+
+@media screen and (max-width: 900px) {
+  .form-response {
+    text-align: center;
+    justify-content: center;
+
+    .two-col-text-input {
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: center;
+      row-gap: 10px;
+    }
+    .one-col-text-input {
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-left: 20%;
+      width: 80%;
+      align-items: center;
+
+      .cal-icon {
+        display: none;
+      }
+    }
+
+    .three-col-text-input {
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: center;
+
+      .children,
+      .adult,
+      .rooms {
+        display: none;
+      }
+    }
+
+    .message-text-input {
+      padding-left: 20%;
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .booking-form-holder {
+    .submit-button {
+      width: 80%;
+      max-width: 850px;
+      height: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home .home-content .booking-form-holder .submit-button {
+    width: 80%;
+    max-width: 850px;
+    height: 60px;
+    margin: 20px auto;
+    display: flex;
+  }
+}
+
+// targeting the app and nav - does not work
+//  @media screen and (max-width: 1110px) {
+//   #app,
+//   nav,
+//   footer {
+//     padding: 0 20px;
+//   }
+// }
+
+// targeting the form classes, added the app id and home class - does not work, does not work with just booking classes
+// @media screen and (max-width: 900px) {
+//   #app {
+//     .home {
+//       .booking-form-holder {
+//         .two-inputs {
+//           // flex-direction: column wrap;
+
+//           .two-col-text-input {
+//             width: 100%;
+//             flex-direction: column wrap;
+
+//             &:last-child {
+//               margin-left: 0;
+//               margin-top: 20px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// targeting just the form resposne - does not work
+// @media screen and (max-width: 900px) {
+//   .form-response {
+//     flex-direction: column;
+//     width: 100%;
+//   }
+// }
+
+// targeting the whole form container - does not work
+// @media (max-width: 1000px) {
+//   .booking-form-holder {
+//     .two-inputs {
+//       flex-direction: column;
+//       .two-col-text-input {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+
+// targeting everything in app  - does not work
+// @media (max-width: 1000px) {
+//   #app {
+//     flex-direction: column;
+//   }
+// }

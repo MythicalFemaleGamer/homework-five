@@ -1,0 +1,414 @@
+.promo-image-box {
+  width: 236px;
+  height: 304px;
+  background-color: grey;
+}
+
+.promo-image-israel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.promo-image-usa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-02.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.promo-image-australia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-03.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: "novaExtraCondensed";
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: "gillThin";
+  src: url(../css/fonts/GillSans-Light.ttf);
+}
+footer {
+  background-color: #79addc;
+  color: white;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+}
+footer .footer-contents {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+footer .footer-contents .logo {
+  background-image: url(../images/logo/logo-white.svg);
+  width: 92px;
+  height: 38px;
+}
+footer .footer-contents .copywrite {
+  font-family: "gillThin", sans-serif;
+  font-size: 12px;
+  width: 216px;
+  height: 16px;
+}
+footer .footer-contents .social-media-icons {
+  display: flex;
+  gap: 22px;
+  width: 127px;
+}
+footer .footer-contents .social-media-icons .facebook,
+footer .footer-contents .social-media-icons .twitter,
+footer .footer-contents .social-media-icons .instagram {
+  width: 22.5px;
+  height: 22.5px;
+  background-size: cover;
+}
+footer .footer-contents .social-media-icons .facebook {
+  background-image: url(../images/logo/facebook.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+footer .footer-contents .social-media-icons .twitter {
+  background-image: url(../images/logo/twitter.svg);
+}
+footer .footer-contents .social-media-icons .instagram {
+  background-image: url(../images/logo/instagram.svg);
+}
+
+nav {
+  width: 980px;
+  height: 92px;
+  margin-top: 10px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  color: #fff;
+  border-bottom: #fff 2px solid;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-family: "gillThin", sans-serif;
+  margin-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  left: 45%;
+  border-right: 1px solid #79addc;
+}
+nav .nav-logo {
+  background-image: url(../images/logo/logo-white.png);
+  max-width: 92px;
+  height: 38px;
+  position: relative;
+  top: 30px;
+}
+
+.home .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.home .hero .callout h1 {
+  font-family: "novaExtraCondensed", sans-serif;
+  font-size: 60px;
+  font-style: italic;
+  text-align: center;
+}
+.home .hero .callout p {
+  font-family: "gillThin", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+.home .hero .callout .btn {
+  width: 122px;
+  height: 40px;
+  background-color: #79addc;
+  color: #fff;
+  font-family: "gillThin", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.home .home-content {
+  min-height: 200px;
+  max-width: 818px;
+  margin: -43px auto 0 auto;
+}
+.home .home-content .promos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.home .home-content .promos .callout h1 {
+  font-family: "novaExtraCondensed", sans-serif;
+  font-size: 60px;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  margin-top: 47px;
+}
+.home .home-content .promos .callout p {
+  font-family: "gillThin", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+}
+.home .home-content .promos .callout .btn {
+  width: 122px;
+  height: 40px;
+  background-color: #79addc;
+  color: #fff;
+  font-family: "gillThin", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.home .home-content .booking-form-holder h1 {
+  font-family: "novaExtraCondensed", sans-serif;
+  font-size: 60px;
+  font-style: italic;
+}
+.home .home-content .booking-form-holder input {
+  border: 2px solid #79addc;
+}
+.home .home-content .booking-form-holder {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.home .home-content .booking-form-holder .two-col-text-input {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.home .home-content .booking-form-holder .two-col-text-input input {
+  width: 48%;
+  height: 58px;
+  padding: 0 16px;
+  font-family: "gillThin", sans-serif;
+  font-size: 18px;
+}
+.home .home-content .booking-form-holder .one-col-text-input {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.home .home-content .booking-form-holder .one-col-text-input .cal-icon {
+  position: absolute;
+  font-size: 24px;
+  top: 16px;
+  left: 95%;
+}
+.home .home-content .booking-form-holder .one-col-text-input p {
+  font-family: "gillThin", sans-serif;
+  font-size: 18px;
+  padding-top: 20px;
+}
+.home .home-content .booking-form-holder .one-col-text-input input {
+  width: 80%;
+  height: 58px;
+  padding: 0 16px;
+  font-family: "gillThin", sans-serif;
+  font-size: 18px;
+}
+.home .home-content .booking-form-holder .three-col-text-input {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.home .home-content .booking-form-holder .three-col-text-input .fa-solid {
+  font-size: 24px;
+}
+.home .home-content .booking-form-holder .three-col-text-input .adult {
+  position: absolute;
+  left: 170px;
+  top: 13px;
+}
+.home .home-content .booking-form-holder .three-col-text-input .children {
+  position: absolute;
+  left: 480px;
+  top: 13px;
+}
+.home .home-content .booking-form-holder .three-col-text-input .rooms {
+  position: absolute;
+  left: 780px;
+  top: 13px;
+}
+.home .home-content .booking-form-holder .three-col-text-input p {
+  font-family: "gillThin", sans-serif;
+  font-size: 18px;
+  padding-top: 20px;
+}
+.home .home-content .booking-form-holder .three-col-text-input input {
+  width: 103px;
+  height: 58px;
+  padding: 0 16px;
+  font-family: "gillThin", sans-serif;
+  font-size: 18px;
+}
+.home .home-content .booking-form-holder .message-text-input {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.home .home-content .booking-form-holder .message-text-input input {
+  width: 818px;
+  height: 192px;
+  padding-left: 16px;
+  font-family: "gillThin", sans-serif;
+  font-size: 18px;
+  padding-bottom: 130px;
+}
+.home .home-content .booking-form-holder .submit-button {
+  background-color: #79addc;
+  margin-top: 37px;
+  margin-bottom: 100px;
+  width: 813px;
+  height: 60.59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.home .home-content .booking-form-holder .submit-button a {
+  color: #fff;
+  font-family: "gillThin", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .home-content .promos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-content .promos .promo-image-box {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .footer-contents .logo {
+    display: none;
+  }
+  footer .footer-contents .copywrite {
+    display: none;
+  }
+  nav {
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    background-color: #79addc;
+  }
+}
+@media screen and (max-width: 900px) {
+  .form-response {
+    text-align: center;
+    justify-content: center;
+  }
+  .form-response .two-col-text-input {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .form-response .one-col-text-input {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 20%;
+    width: 80%;
+    align-items: center;
+  }
+  .form-response .one-col-text-input .cal-icon {
+    display: none;
+  }
+  .form-response .three-col-text-input {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+  .form-response .three-col-text-input .children,
+  .form-response .three-col-text-input .adult,
+  .form-response .three-col-text-input .rooms {
+    display: none;
+  }
+  .form-response .message-text-input {
+    padding-left: 20%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .booking-form-holder .submit-button {
+    width: 80%;
+    max-width: 850px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .home .home-content .booking-form-holder .submit-button {
+    width: 80%;
+    max-width: 850px;
+    height: 60px;
+    margin: 20px auto;
+    display: flex;
+  }
+}

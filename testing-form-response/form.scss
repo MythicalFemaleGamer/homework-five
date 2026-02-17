@@ -1,0 +1,37 @@
+.home2 {
+  min-height: 300px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.form2 {
+  padding-top: 40px;
+
+  .two-inputs {
+    display: flex;
+    justify-content: space-between;
+
+    .label-input {
+      display: flex;
+      align-items: center;
+      width: 50%;
+    }
+
+    input {
+      height: 50px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .form2 {
+    .two-inputs {
+      flex-direction: column;
+
+      .label-input {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,238 @@
+.home {
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/hero.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    .callout {
+      h1 {
+        font-family: "novaExtraCondensed", sans-serif;
+        font-size: 60px;
+        font-style: italic;
+        text-align: center;
+      }
+      p {
+        font-family: "gillThin", sans-serif;
+        font-size: 20px;
+        font-style: italic;
+        text-align: center;
+      }
+      .btn {
+        width: 122px;
+        height: 40px;
+        background-color: $button-bg-color;
+        color: #fff;
+        font-family: "gillThin", sans-serif;
+        font-size: 15px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+      }
+    }
+  }
+  .home-content {
+    min-height: 200px;
+    max-width: $home-content-max-width;
+    margin: -43px auto 0 auto;
+    // background-color: bisque;
+
+    .promos {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .callout {
+        h1 {
+          font-family: "novaExtraCondensed", sans-serif;
+          font-size: 60px;
+          font-style: italic;
+          text-align: center;
+          color: #fff;
+          margin-top: 47px;
+        }
+        p {
+          font-family: "gillThin", sans-serif;
+          font-size: 20px;
+          font-style: italic;
+          text-align: center;
+          color: #fff;
+        }
+        .btn {
+          width: 122px;
+          height: 40px;
+          background-color: $button-bg-color;
+          color: #fff;
+          font-family: "gillThin", sans-serif;
+          font-size: 15px;
+          text-align: center;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+          border-radius: 20px;
+        }
+      }
+    }
+    //promo image box is in components.scss
+
+    .booking-form-holder {
+      h1 {
+        font-family: "novaExtraCondensed", sans-serif;
+        font-size: 60px;
+        font-style: italic;
+      }
+      input {
+        border: 2px solid #79addc;
+      }
+
+      margin-top: 30px;
+      padding-bottom: 30px;
+
+      .two-col-text-input {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+        margin-top: 20px;
+        // border-color: $input-border-color solid 1px;
+
+        input {
+          width: 48%;
+          height: 58px;
+          padding: 0 16px;
+          font-family: "gillThin", sans-serif;
+          font-size: 18px;
+          //   border-color: $input-border-color solid 1px;
+          // border: 2px solid #79addc;
+        }
+      }
+      .one-col-text-input {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+        .cal-icon {
+          position: absolute;
+          //positions it to the parent
+          font-size: 24px;
+          //can use font properties as icon is seen as font
+          top: 16px;
+          left: 95%;
+        }
+        p {
+          font-family: "gillThin", sans-serif;
+          font-size: 18px;
+          padding-top: 20px;
+        }
+
+        input {
+          width: 80%;
+          height: 58px;
+          padding: 0 16px;
+          font-family: "gillThin", sans-serif;
+          font-size: 18px;
+        }
+      }
+      .three-col-text-input {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+        .fa-solid {
+          //positions it to the parent
+          font-size: 24px;
+
+          //can use font properties as icon is seen as font
+        }
+
+        .adult {
+          position: absolute;
+          left: 170px;
+          top: 13px;
+        }
+        .children {
+          position: absolute;
+          left: 480px;
+          top: 13px;
+        }
+        .rooms {
+          position: absolute;
+          left: 780px;
+          top: 13px;
+        }
+
+        p {
+          font-family: "gillThin", sans-serif;
+          font-size: 18px;
+          padding-top: 20px;
+        }
+
+        input {
+          width: 103px;
+          height: 58px;
+          padding: 0 16px;
+          font-family: "gillThin", sans-serif;
+          font-size: 18px;
+        }
+      }
+      .message-text-input {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+        input {
+          width: 818px;
+          height: 192px;
+          padding-left: 16px;
+          font-family: "gillThin", sans-serif;
+          font-size: 18px;
+          padding-bottom: 130px;
+        }
+      }
+      .submit-button {
+        background-color: $button-bg-color;
+        margin-top: 37px;
+        margin-bottom: 100px;
+        width: 813px;
+        height: 60.59px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+
+        a {
+          color: #fff;
+          font-family: "gillThin", sans-serif;
+          font-size: 15px;
+          text-decoration: none;
+        }
+
+        // button {
+        //   background-color: $button-bg-color;
+        //   color: #fff;
+        //   text-align: center;
+        //   font-family: "gillThin", sans-serif;
+        //   font-size: 15px;
+        //   border: none;
+        // }
+      }
+    }
+  }
+}

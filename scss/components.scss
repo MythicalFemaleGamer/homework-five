@@ -1,0 +1,32 @@
+.promo-image-box {
+  width: $promo-tour-image-width;
+  height: $promo-tour-image-height;
+  background-color: grey;
+}
+
+.promo-image-israel {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.promo-image-usa {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-02.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.promo-image-australia {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-03.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
