@@ -26,6 +26,16 @@ p {
   src: url(../css/fonts/GillSans-Light.ttf);
 }
 
+@font-face {
+  font-family: "gillReg";
+  src: url(../css/fonts/GillSans.ttf);
+}
+
+@font-face {
+  font-family: "gillItalic";
+  src: url(../css/fonts/GillSans-Italic.ttf);
+}
+
 footer {
   background-color: $footer-bg-color;
   color: white;

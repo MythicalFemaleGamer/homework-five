@@ -54,6 +54,14 @@ p {
   font-family: "gillThin";
   src: url(../css/fonts/GillSans-Light.ttf);
 }
+@font-face {
+  font-family: "gillReg";
+  src: url(../css/fonts/GillSans.ttf);
+}
+@font-face {
+  font-family: "gillItalic";
+  src: url(../css/fonts/GillSans-Italic.ttf);
+}
 footer {
   background-color: #79addc;
   color: white;
@@ -107,6 +115,9 @@ nav {
   width: 980px;
   height: 92px;
   margin-top: 10px;
+}
+
+.nav-white {
   position: fixed;
   top: 0;
   left: 50%;
@@ -115,7 +126,7 @@ nav {
   color: #fff;
   border-bottom: #fff 2px solid;
 }
-nav a {
+.nav-white a {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
@@ -126,12 +137,34 @@ nav a {
   left: 45%;
   border-right: 1px solid #79addc;
 }
-nav .nav-logo {
+.nav-white .nav-logo {
   background-image: url(../images/logo/logo-white.png);
   max-width: 92px;
   height: 38px;
   position: relative;
   top: 30px;
+}
+
+.nav-black {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-bottom: #000 2px solid;
+}
+.nav-black a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-family: "gillThin", sans-serif;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: 1px solid #79addc;
+}
+.nav-black .nav-logo-black {
+  background-image: url(../images/logo/logo-black.png);
+  min-width: 92px;
+  height: 38px;
 }
 
 .home .hero {
@@ -148,6 +181,7 @@ nav .nav-logo {
 .home .hero .callout h1 {
   font-family: "novaExtraCondensed", sans-serif;
   font-size: 60px;
+  font-weight: lighter;
   font-style: italic;
   text-align: center;
 }
@@ -187,6 +221,7 @@ nav .nav-logo {
   text-align: center;
   color: #fff;
   margin-top: 47px;
+  font-weight: lighter;
 }
 .home .home-content .promos .callout p {
   font-family: "gillThin", sans-serif;
@@ -213,6 +248,7 @@ nav .nav-logo {
   font-family: "novaExtraCondensed", sans-serif;
   font-size: 60px;
   font-style: italic;
+  font-weight: lighter;
 }
 .home .home-content .booking-form-holder input {
   border: 2px solid #79addc;
@@ -327,6 +363,101 @@ nav .nav-logo {
   font-family: "gillThin", sans-serif;
   font-size: 15px;
   text-decoration: none;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 980px;
+  min-height: 510px;
+}
+.about-content .about-blurb {
+  margin-top: 100px;
+}
+.about-content .about-blurb h1 {
+  font-family: "novaExtraCondensed", sans-serif;
+  font-size: 60px;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  font-weight: lighter;
+  letter-spacing: 6px;
+}
+.about-content .about-blurb p {
+  font-family: "gillReg", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+}
+.about-content .client-quote-header {
+  width: 980px;
+  height: 50px;
+  display: flex;
+  margin-bottom: 37px;
+}
+.about-content .client-quote-header h1 {
+  font-family: "novaExtraCondensed", sans-serif;
+  font-size: 40px;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  font-weight: lighter;
+  letter-spacing: 4px;
+}
+.about-content .client-quote-content {
+  margin-bottom: 180px;
+}
+.about-content .client-quote-content .client-quote {
+  width: 980px;
+  min-height: 150px;
+  display: flex;
+  gap: 21px;
+  justify-content: flex-start;
+  margin-bottom: 37px;
+}
+.about-content .client-quote-content .client-quote .client-image {
+  background-image: url(../images/about-client-01.jpg);
+  height: 150px;
+  width: 260px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about-content .client-quote-content .client-quote .client-image-two {
+  background-image: url(../images/about-client-02.jpg);
+  height: 150px;
+  width: 260px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about-content .client-quote-content .client-quote .client-info {
+  width: 385px;
+  height: 100%;
+  position: relative;
+}
+.about-content .client-quote-content .client-quote .client-info .client-text {
+  margin-bottom: 50px;
+}
+.about-content .client-quote-content .client-quote .client-info .client-text p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+.about-content .client-quote-content .client-quote .client-info .client-name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.about-content .client-quote-content .client-quote .client-info .client-name p {
+  font-family: "novaExtraCondensed", sans-serif;
+  font-size: 20px;
+  color: #79addc;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 @media screen and (max-width: 900px) {
