@@ -3,13 +3,6 @@ nav {
   height: $nav-height;
   //   background-color: aqua;
   margin-top: 10px;
-
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: space-evenly;
-
-  // .links {
-  // }
 }
 .nav-white {
   position: fixed;
@@ -19,7 +12,9 @@ nav {
   z-index: 99;
   color: #fff;
   border-bottom: #fff 2px solid;
-
+  :hover {
+    color: #79addc;
+  }
   a {
     text-decoration: none;
     color: #fff;
@@ -47,6 +42,9 @@ nav {
   justify-content: space-between;
   margin: 0 auto;
   border-bottom: #000 2px solid;
+  :hover {
+    color: #79addc;
+  }
   a {
     text-decoration: none;
     color: #000;
